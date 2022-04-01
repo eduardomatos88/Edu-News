@@ -12,8 +12,14 @@ Um site de venda de assinatura de new letter onde você recebe as notícias mais
 ## Aprendizados
 
 ### Next
-Server side rendered do Next é incrível!
-Next pode ser utilizado com Typescript.
+- No Next existem 3 tipos principais de renderização:
+  - Client-side render: Deve ser utilizado quando o conteúdo do componente pode ser carregado depois que a página está em tela do usuário
+  - Server side render: Para páginas que precisam de indexação para motores de busca, quando a página precisa dos dados para mostrar em tela no momento do carregamento, em páginas que não necessitam de indexação para motores de busca ou onde requisições que necessitam de mais tempo para processar, vale a pena o seu uso para aumentar a performance.
+  - Static Site Generation: Uma estratégia para melhorar performance para páginas que serão as mesmas para todos os usuários e que necessitam de indexação para motores de busca, tomando cuidado sempre para páginas que são dinâmicas com dados personalizados para cada usuário, pois perderá o efeito e mostrará a mesma página independente do usuário.
+
+- Segurança: NUNCA uma informação está segura no Frontend, independente da estratégia. Porém, em alguns momentos, podemos utilizar a camada do next como se fosse um Backend. Criando arquivos dentro da pasta pages/api, exportando uma função, automaticamente vira uma rota para a camada do Next.
+
+- Rotas com parâmetro: Ao criar uma pasta dentro de pages/api, o arquivo com nome "index" será chamado na rota padrão e utilizando colchetes"[]" nos nomes dos arquivos, você consegue utilizar parâmetros vindos da rota. Outra forma mais dinâmica é o uso do spread operator no nome do arquivo, onde toda a rota é enviada como parâmetro para a requisição.
 
 ### SASS
 Pré processador de css muito dinâmico, utilizando a biblioteca de sass, o processamento fica implícito.
