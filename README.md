@@ -8,6 +8,8 @@ Um site de venda de assinatura de new letter onde você recebe as notícias mais
 * NextJS
 * SASS
 * Stripe
+* Github OAuth
+* FaunaDB
 
 ## Aprendizados
 
@@ -29,3 +31,6 @@ Um sistema de pagamento completo, com muitas opções de teste para integrar e d
 
 ### Login social - Github
 Cadastrando a aplicação nas opções de desenvolvedor dentro do Github, você consegue utilizar o login social, que é simples e seguro para utilizar como forma de login e gerenciamento de usuário.
+
+### FaunaDB
+No caso de um projeto Serverless, as conexões com o banco de dados convencional, fica extremamente custoso conectar ao banco de dados cada vez que for fazer uma requisição. Para melhorar essa performance, utilizaremos um banco de dados não relacional, muito mais dinâmico e performático, o FaunaDB. Uma outra opção seria o DynamoDB.
