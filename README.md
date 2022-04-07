@@ -26,3 +26,6 @@ Pré processador de css muito dinâmico, utilizando a biblioteca de sass, o proc
 
 ### Stripe
 Um sistema de pagamento completo, com muitas opções de teste para integrar e documentação fácil de entender.
+
+### Login social - Github
+Cadastrando a aplicação nas opções de desenvolvedor dentro do Github, você consegue utilizar o login social, que é simples e seguro para utilizar como forma de login e gerenciamento de usuário.
